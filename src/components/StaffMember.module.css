@@ -1,0 +1,13 @@
+.staffPic{
+    width: 250px;
+    height: 150px;
+    object-fit:scale-down
+}
+
+.sectionOne{
+    text-align: center;
+}
+
+.sectionTwo{
+    font-size: smaller;
+}

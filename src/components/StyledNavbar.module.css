@@ -1,0 +1,165 @@
+.link {
+  color: #588157;
+}
+
+.active {
+  color: #2d333a;
+}
+
+
+.navbar {
+  padding: 1rem 0rem;
+  width: 90vw;
+  max-width: 100%;
+  margin: 0 auto;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between;  */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border-bottom: solid black; */
+}
+.logoText{
+  padding-top: 1rem;
+  color: #588157;
+  font-size: 4vw;
+}
+
+.logoText > span{
+  font-weight: 200;
+}
+
+.navbarButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.navBtn {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #588157;
+  cursor: pointer;
+  
+}
+
+
+#navLink {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#navLink:hover {
+  color: #d4a373;
+}
+
+.navButton {
+  border: 0px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.75;
+  margin: 0px;
+  padding: 0px 0px 2px 0px;
+  color: #588157;
+  cursor: pointer;
+}
+.navBtn:hover{
+  color: #d4a373;
+}
+
+.dropMenu {
+  position: absolute;
+  /* background-color: rgba(51, 51, 51, 1); */
+  background: rgba(218, 215, 205, 0.8);
+  border-radius: 10px;
+  padding: 0px 2rem 0.5rem 2rem;
+  z-index: 99;
+}
+
+.dropMenuItem {
+  color: #588157;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+  font-size: smaller;
+}
+
+.dropMenuItem:hover {
+  color: #344e41;
+  text-decoration: underline;
+  /* border-radius: 0.3rem;
+  background-color: rgba(243, 243, 243, 0.1); */
+}
+
+.badge {
+  color: white;
+  background-color: #588157;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 0rem;
+  font-size: smaller;
+  /* font-weight: bold; */
+}
+
+.badge:hover {
+  background-color: #d4a373;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@media only screen and (max-width: 390),
+  (min-device-width: 400) and (max-device-width: 768px) {
+    .navbar {
+      justify-content: end;
+      
+    }
+
+  }
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  .badge {
+    padding: 0.25rem 0.5rem;
+  }
+  #navLink {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .navButton {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .navBtn {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .logoText{
+    padding-top: 1.3em;
+    font-size: 1rem;
+  }
+}

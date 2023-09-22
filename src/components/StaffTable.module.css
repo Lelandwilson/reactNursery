@@ -1,0 +1,49 @@
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  /* border-bottom: 1px solid grey; */
+  padding: 1rem;
+}
+
+table tr:nth-child(n+1):nth-child(-n+3) {
+  border-bottom: 1px solid grey;
+}
+
+table tr:nth-child(4) {
+  border-bottom: none;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+}

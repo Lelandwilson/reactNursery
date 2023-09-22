@@ -1,0 +1,19 @@
+.container{
+    position: relative;
+    top: -5px;
+}
+
+.overlayText{
+    position: absolute;
+    font-size: larger;
+    font-weight: 600;
+    color: whitesmoke;
+    top: -13px;
+    left: 21px;
+    /* transform: rotate(48deg); */
+}
+
+
+.saleIcon{
+    width:80px
+}

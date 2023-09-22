@@ -1,0 +1,56 @@
+
+
+.sectionHalf{
+    text-align: center;
+}
+
+.sectionHalf > p{
+    display: inline-block;
+    text-align:justify;
+}
+
+
+.pageTitle{
+    margin: 0.2rem;
+    padding-left: 1rem;
+}
+
+.map{
+    max-width: 10rem;
+}
+
+.image{
+    width: 30vw;
+    height: 18vw;
+    object-fit: cover;
+    padding: 0.5rem;
+
+}
+.discountSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+
+.linkSpan{
+    text-decoration: underline;
+}
+
+.strikeText{
+    text-decoration: line-through;
+ 
+}
+
+.addToCartSection{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    margin: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,54 @@
+
+h5{
+    color: #588157;
+}
+p{
+    color: black;
+    font-weight: 300;
+}
+.pageTitle{
+    margin: 0.2rem;
+    padding-left: 1rem;
+}
+/* 
+.navbar.dropMenu {
+    background-color: rgba(238, 238, 238 1);
+
+  } */
+
+.ourStory{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-width: 95%;
+
+}
+
+.mapSection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mapRight > p{
+    line-height: 0.5rem;
+
+}
+
+.googleMap{
+    max-width: 50vw;
+    border: solid black 1px;
+    margin-left: 2rem;
+}
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    .mapSection{
+        display: block;
+        text-align: center;
+    }
+	
+}

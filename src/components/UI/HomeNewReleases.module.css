@@ -1,0 +1,88 @@
+.section {
+  margin: 2rem 0rem;
+  padding: 2rem;
+}
+.carouselContainer {
+  margin: auto;
+  max-width: 80%;
+  background-color: #344e41;
+  /* background-color: #283618; */
+}
+
+.new_Item {
+  margin-top: 1rem;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.carouselCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.carouselSingleComment {
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 8);
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+
+.newProductGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  
+}
+.newProductGroup > div > p,
+a {
+  color: #3a5a40;
+  font-size: smaller;
+  font-weight: 400;
+  /* line-height: normal; */
+  margin: 0.1rem;
+}
+
+.newProductGroup > div > h5 {
+  color: black;
+}
+
+.productNavImage {
+  width: 18rem;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  .carouselCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .section {
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+  }
+  .section,
+  .thirdSection > h3 {
+    text-align: center;
+  }
+  .newProductGroup {
+    text-align: center;
+  }
+
+  .productNavImage {
+    width: 100%;
+    height: 30vw;
+  }
+}

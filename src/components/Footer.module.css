@@ -1,0 +1,33 @@
+.footerSection{
+    background: #000814;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .footerSection > p{
+    color: whitesmoke;
+  }
+  .footerIcons{
+    display: flex;
+    gap:1rem;
+  }
+  .gitHubLogo{
+    width: 2rem;
+  }
+
+
+  @media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  .section{
+    text-align: center;
+  }
+  .footerSection{
+    height: 12vh;
+    padding: 0rem 1rem;
+  }
+}
+

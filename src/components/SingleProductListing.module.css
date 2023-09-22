@@ -1,0 +1,62 @@
+.pageTitle {
+  margin: 0.2rem;
+  padding-left: 1rem;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+
+.section {
+  position: relative;
+}
+
+.discountSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.productNavImage {
+  width: 200px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 3.5rem;
+}
+
+.pExtraPaddingTop {
+  padding-top: 1.1rem;
+}
+
+.strikeText {
+  text-decoration: line-through;
+}
+
+.iconNewItem {
+  width: 60px;
+  position: absolute;
+  top: -50px;
+  left: -30px;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  .grid-container {
+    display: block;
+    /* min-width: 70vw; */
+  }
+
+  .productNavImage {
+    width: 100%;
+    height: 30vw;
+  }
+
+  .iconNewItem {
+    top: -50px;
+    left: -35px;
+  }
+}
